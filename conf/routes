@@ -1,0 +1,10 @@
+GET    /                            controllers.PersonController.find(id: Long ?= 0, username ?= "", password ?= "")
+
++ noscrf
+DELETE /                           controllers.PersonController.delete(id: Long ?= 0, username ?= "", password ?= "")
+
++ noscrf
+PATCH  /                           controllers.PersonController.update(id: Long ?= 0, username ?= "", password ?= "")
+
++ nocsrf
+POST   /                           controllers.PersonController.create
